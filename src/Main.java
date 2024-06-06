@@ -8,8 +8,10 @@ import java.nio.file.Paths;
 public class Main {
     public static void main(String[] args) {
 
-        int numOfParameters = 1;
+        int numOfParameters = 3;
         String sourcepath = "";
+        double minMass = 0.0;
+        double maxMass = 0.0;
         // weitere Parameter um zu Filtern nötig, numOfParamters muss inkrementiert werden.
 
         if (args.length < numOfParameters) {
@@ -17,12 +19,13 @@ public class Main {
         } else {
             try {
                 sourcepath = args[0];
+                minMass = Double.parseDouble(args[1]);
+                maxMass = Double.parseDouble(args[2]);
                 String input = new String((Files.readAllBytes(Paths.get(sourcepath))));
                 System.out.print(input);
                 JSONArray meteorJSON = new JSONArray(input);
                 System.out.println(meteorJSON.length());
-                System.out.println(meteorJSON.getJSONObject(0));
-                JSONArray filteredMeteorJSON = filter(meteorJSON,20.0,40.0); // 20 und 40 sind Platzhalter
+                JSONArray filteredMeteorJSON = filter(meteorJSON,minMass,maxMass);
                 System.out.println(filteredMeteorJSON.length());
                 //String filteredMeteorString = filteredMeteorJSON.toString(4);
                 //System.out.print(filteredMeteorString);
@@ -38,7 +41,7 @@ public class Main {
         for (int i = 0; i < meteors.length(); i++) {
 
             JSONObject meteor = meteors.getJSONObject(i);
-            String meteorMassString = meteor.optString("mass", null); // Das klappt irgendwie nicht
+            String meteorMassString = meteor.optString("mass", null);
             if (meteorMassString != null) {
                 double meteorMass = Double.parseDouble(meteorMassString);
 

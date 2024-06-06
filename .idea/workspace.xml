@@ -61,7 +61,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Module" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;../SWE-Filters/meteor.json&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;../SWE-Filters/meteor.json&quot; &quot;20&quot; &quot;400&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
