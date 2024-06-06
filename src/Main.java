@@ -1,38 +1,50 @@
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public class Main {
     public static void main(String[] args) {
 
         int numOfParameters = 1;
-        String meteorString = "";
+        String sourcepath = "";
         // weitere Parameter um zu Filtern nötig, numOfParamters muss inkrementiert werden.
 
         if (args.length < numOfParameters) {
             System.out.println("Nicht genug Parameter übergeben!");
         } else {
-            meteorString = args[0];
-            System.out.println(meteorString);
-            JSONArray meteorJSON = new JSONArray(meteorString);
-            JSONArray filteredMeteorJSON = filter(meteorJSON,20,40); // 20 und 40 sind Platzhalter
-            String filteredMeteorString = filteredMeteorJSON.toString(4);
-            System.out.print(filteredMeteorString);
+            try {
+                sourcepath = args[0];
+                String input = new String((Files.readAllBytes(Paths.get(sourcepath))));
+                System.out.print(input);
+                JSONArray meteorJSON = new JSONArray(input);
+                System.out.println(meteorJSON.length());
+                System.out.println(meteorJSON.getJSONObject(0));
+                JSONArray filteredMeteorJSON = filter(meteorJSON,20.0,40.0); // 20 und 40 sind Platzhalter
+                System.out.println(filteredMeteorJSON.length());
+                //String filteredMeteorString = filteredMeteorJSON.toString(4);
+                //System.out.print(filteredMeteorString);
+            } catch (IOException e){
+                System.out.print(e.getMessage());
+            }
         }
-
-
     }
-    public static JSONArray filter(JSONArray meteors, int minMass, int maxMass){
+    public static JSONArray filter(JSONArray meteors, double minMass, double maxMass){
 
-        JSONArray filteredMeteors = null;
+        JSONArray filteredMeteors = new JSONArray();
 
         for (int i = 0; i < meteors.length(); i++) {
 
             JSONObject meteor = meteors.getJSONObject(i);
+            String meteorMassString = meteor.optString("mass", null); // Das klappt irgendwie nicht
+            if (meteorMassString != null) {
+                double meteorMass = Double.parseDouble(meteorMassString);
 
-            int meteorMass = meteor.getInt("mass");
-
-            if(meteorMass >= minMass && meteorMass <= maxMass){
-                filteredMeteors.put(meteor);
+                if (meteorMass >= minMass && meteorMass <= maxMass) {
+                    filteredMeteors.put(meteor);
+                }
             }
         }
 
