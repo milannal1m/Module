@@ -13,29 +13,27 @@ public class Main {
 
         JSONHandler jsonHandler = JSONHandler.getInstance();
 
-        int numOfParameters = 3;
+        String[] arguments = new String[args.length - 1];;
+
         String sourcepath = "";
-        double minMass = 0.0;
-        double maxMass = 0.0;
-        // weitere Parameter um zu Filtern nötig, numOfParamters muss inkrementiert werden.
-
-
         sourcepath = args[0];
+
+        for(int i = 1; i < args.length; i++) {
+            arguments[i-1] = args[i];
+        }
+
         JSONArray meteorJSON = jsonHandler.JSONParseFile(sourcepath);
-        //minMass = Double.parseDouble(args[1]); // Test Eingabe Parameter
-        //maxMass = Double.parseDouble(args[2]);
 
         System.out.println(meteorJSON.length()); //Anzahl davor
 
-        JSONArray filteredMeteorJSON = regionModule.filter(meteorJSON,44.83333,95.16667,4500.0); //Region
+        JSONArray filteredMeteorJSON = regionModule.filter(meteorJSON,arguments); //Region
         //JSONArray filteredMeteorJSON = massModule.filter(meteorJSON,300.0,400.0); //Masse
         //JSONArray filteredMeteorJSON = yearModule.filter(meteorJSON,2000,2011); //Jahr Bereich
-        //JSONArray filteredMeteorJSON = yearModule.filter(meteorJSON,2000); //Jahr
+        //JSONArray filteredMeteorJSON = yearModule.filter(meteorJSON,2000); //Jahr einzeln
         //String[] classes = {"H6","L5"};
         //JSONArray filteredMeteorJSON = classModule.filter(meteorJSON,classes); //class
         System.out.println(filteredMeteorJSON.length()); // Anzahl danach
 
         jsonHandler.JSONWrite(filteredMeteorJSON, sourcepath);
-        }
     }
 }

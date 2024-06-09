@@ -2,21 +2,23 @@ import org.json.JSONObject;
 
 public class RegionModule extends Module{
 
-
-    public boolean meteorInParameters(JSONObject meteor, Object... arguments){
+    // Überprüfung, ob Meteorit in den Parametern liegt
+    public boolean meteorInParameters(JSONObject meteor, String... arguments){
+        // 1000 als default Value, da es keine Meteoriten mit diesen Koordinaten gibt
         double meteorLat = meteor.optDouble("reclat", 1000);
         double meteorLon = meteor.optDouble("reclong", 1000);
 
         if (meteorLat != 1000 && meteorLon != 1000){
-            double lat = (double) arguments[0];
-            double lon = (double) arguments[1];
-            double radius = (double) arguments[2];
+            double lat = Double.parseDouble(arguments[0]);
+            double lon = Double.parseDouble(arguments[1]);
+            double radius = Double.parseDouble(arguments[2]);
 
             return calculateDistance(meteorLat, meteorLon, lat, lon) <= radius;
         }
         return false;
     }
 
+    // Berechnung der Entfernung zwischen zwei Koordinaten
     private double calculateDistance(double lat1, double lon1, double lat2, double lon2) {
         final int ERDRADIUS = 6371; // Radius der Erde in Kilometern
 

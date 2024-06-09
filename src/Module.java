@@ -3,7 +3,7 @@ import org.json.JSONObject;
 
 public  abstract class Module {
 
-    public JSONArray filter(JSONArray meteors, Object... arguments){
+    public JSONArray filter(JSONArray meteors, String... arguments){
         JSONArray filteredMeteors = new JSONArray();
 
         for (int i = 0; i < meteors.length(); i++) {
@@ -16,6 +16,6 @@ public  abstract class Module {
         return filteredMeteors;
     }
 
-    public abstract boolean meteorInParameters(JSONObject meteor, Object... arguments);
+    public abstract boolean meteorInParameters(JSONObject meteor, String... arguments);
 
 }
