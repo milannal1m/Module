@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78c7d731-89af-49ec-a5f7-8cd140c49a64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MassModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RegionModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/YearModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JSONHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Module.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,11 +67,16 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Module" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;../SWE-Filters/meteor.json&quot; &quot;20&quot; &quot;400&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;../SWE-Filters/filteredMeteor.json&quot; &quot;20&quot; &quot;400&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
