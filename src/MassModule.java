@@ -7,8 +7,8 @@ public class MassModule extends Module{
         String meteorMassString = meteor.optString("mass", null);
         if (meteorMassString != null) {
             double meteorMass = Double.parseDouble(meteorMassString);
-            double minMass = meteor.optDouble(arguments[0]);
-            double maxMass = meteor.optDouble(arguments[1]);
+            double minMass = Double.parseDouble(arguments[0]);
+            double maxMass = Double.parseDouble(arguments[1]);
 
             return meteorMass >= minMass && meteorMass <= maxMass;
         }

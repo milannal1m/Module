@@ -24,15 +24,16 @@ public class Main {
 
         JSONArray meteorJSON = jsonHandler.JSONParseFile(sourcepath);
 
-        System.out.println(meteorJSON.length()); //Anzahl davor
+        int initialLength = meteorJSON.length(); // Anzahl vorher
 
-        JSONArray filteredMeteorJSON = regionModule.filter(meteorJSON,arguments); //Region
-        //JSONArray filteredMeteorJSON = massModule.filter(meteorJSON,300.0,400.0); //Masse
-        //JSONArray filteredMeteorJSON = yearModule.filter(meteorJSON,2000,2011); //Jahr Bereich
-        //JSONArray filteredMeteorJSON = yearModule.filter(meteorJSON,2000); //Jahr einzeln
-        //String[] classes = {"H6","L5"};
-        //JSONArray filteredMeteorJSON = classModule.filter(meteorJSON,classes); //class
-        System.out.println(filteredMeteorJSON.length()); // Anzahl danach
+        //JSONArray filteredMeteorJSON = regionModule.filter(meteorJSON,arguments); //Region
+        //JSONArray filteredMeteorJSON = massModule.filter(meteorJSON,arguments); //Masse
+        //JSONArray filteredMeteorJSON = yearModule.filter(meteorJSON,arguments); //Jahr
+        JSONArray filteredMeteorJSON = classModule.filter(meteorJSON,arguments); //Klasse
+
+        int finalLength = filteredMeteorJSON.length(); // Anzahl danach
+
+        System.out.println("Filtered " + (initialLength-finalLength) + " meteors.");
 
         jsonHandler.JSONWrite(filteredMeteorJSON, sourcepath);
     }

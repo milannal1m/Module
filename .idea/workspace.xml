@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ClassModule:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78c7d731-89af-49ec-a5f7-8cd140c49a64" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ClassModule_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClassModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MassModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MassModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RegionModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegionModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/YearModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/YearModule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +68,8 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/milan/Documents/DHBW/SWE/SWEProjekt/Module",
     "onboarding.tips.debug.path": "/Users/milan/Documents/DHBW/SWE/SWEProjekt/Module/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
@@ -77,19 +80,14 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Module" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;../SWE-Filters/filteredMeteor.json&quot; &quot;20.0&quot; &quot;400.0&quot; &quot;500.0&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;../SWE-Filters/filteredMeteors.json&quot; &quot;L5&quot; &quot;H6&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
