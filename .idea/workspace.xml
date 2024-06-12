@@ -9,17 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78c7d731-89af-49ec-a5f7-8cd140c49a64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_pioneer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RegionCalculateDistanceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RegionFilterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RegionMeteorInParametersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RegionModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegionModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/YearModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/YearModule.java" afterDir="false" />
-    </list>
+    <list default="true" id="78c7d731-89af-49ec-a5f7-8cd140c49a64" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
