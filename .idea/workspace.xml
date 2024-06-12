@@ -10,11 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78c7d731-89af-49ec-a5f7-8cd140c49a64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ClassModule_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_pioneer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RegionCalculateDistanceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RegionFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RegionMeteorInParametersTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClassModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MassModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MassModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Module.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegionModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegionModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/YearModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/YearModule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -59,27 +64,56 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.RegionCalculateDistanceTest.executor": "Run",
+    "JUnit.RegionCalculateDistanceTest.test5North.executor": "Run",
+    "JUnit.RegionCalculateDistanceTest.testDistanceMunichStuttgart.executor": "Run",
+    "JUnit.RegionCalculateDistanceTest.testMaxDistance.executor": "Run",
+    "JUnit.RegionFilterTest.testAllInCriteria.executor": "Run",
+    "JUnit.RegionFilterTest.testEmptyJSONArray.executor": "Run",
+    "JUnit.RegionFilterTest.testMissingJSONData.executor": "Run",
+    "JUnit.RegionFilterTest.testNoneInCriteria.executor": "Run",
+    "JUnit.RegionFilterTest.testSomeInCriteria.executor": "Run",
+    "JUnit.RegionMeteorInParametersTest.executor": "Run",
+    "JUnit.RegionModuleTest.executor": "Run",
+    "JUnit.RegionModuleTest.testMeteorInParameters_InRadius.executor": "Run",
+    "JUnit.RegionModuleTest.testMeteorInParameters_MissingJSONData.executor": "Run",
+    "JUnit.RegionModuleTest.testMeteorInParameters_OnRadius.executor": "Run",
+    "JUnit.RegionModuleTest.testMeteorInParameters_OutOfRadius.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "create.test.in.the.same.root": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/milan/Documents/DHBW/SWE/SWEProjekt/Module",
+    "last_opened_file_path": "/Users/milan/Documents/DHBW/SWE/SWEProjekt/Module/src",
     "onboarding.tips.debug.path": "/Users/milan/Documents/DHBW/SWE/SWEProjekt/Module/src/Main.java",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RegionCalculateDistanceTest">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Module" />
@@ -88,6 +122,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegionCalculateDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegionCalculateDistanceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegionFilterTest.testAllInCriteria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegionFilterTest" />
+      <option name="METHOD_NAME" value="testAllInCriteria" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegionFilterTest.testEmptyJSONArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegionFilterTest" />
+      <option name="METHOD_NAME" value="testEmptyJSONArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegionFilterTest.testMissingJSONData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegionFilterTest" />
+      <option name="METHOD_NAME" value="testMissingJSONData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegionFilterTest.testSomeInCriteria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegionFilterTest" />
+      <option name="METHOD_NAME" value="testSomeInCriteria" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RegionCalculateDistanceTest" />
+        <item itemvalue="JUnit.RegionFilterTest.testEmptyJSONArray" />
+        <item itemvalue="JUnit.RegionFilterTest.testMissingJSONData" />
+        <item itemvalue="JUnit.RegionFilterTest.testAllInCriteria" />
+        <item itemvalue="JUnit.RegionFilterTest.testSomeInCriteria" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

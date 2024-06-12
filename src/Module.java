@@ -3,6 +3,7 @@ import org.json.JSONObject;
 
 public  abstract class Module {
 
+    //implements the filter method for the modules as a template method
     public JSONArray filter(JSONArray meteors, String... arguments){
         JSONArray filteredMeteors = new JSONArray();
 
@@ -16,6 +17,7 @@ public  abstract class Module {
         return filteredMeteors;
     }
 
+    //checks if a given meteor is in the parameters of the module
     public abstract boolean meteorInParameters(JSONObject meteor, String... arguments);
 
 }

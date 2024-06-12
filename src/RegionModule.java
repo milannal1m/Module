@@ -2,9 +2,9 @@ import org.json.JSONObject;
 
 public class RegionModule extends Module{
 
-    // Überprüfung, ob Meteorit in den Parametern liegt
+    // checks if the region of the meteor is in the parameters given
     public boolean meteorInParameters(JSONObject meteor, String... arguments){
-        // 1000 als default Value, da es keine Meteoriten mit diesen Koordinaten gibt
+        // 1000 as default Value because no meteor has this coordinates
         double meteorLat = meteor.optDouble("reclat", 1000);
         double meteorLon = meteor.optDouble("reclong", 1000);
 
@@ -18,17 +18,17 @@ public class RegionModule extends Module{
         return false;
     }
 
-    // Berechnung der Entfernung zwischen zwei Koordinaten
+    // Calculates the distance between two points on the earth
     private double calculateDistance(double lat1, double lon1, double lat2, double lon2) {
-        final int ERDRADIUS = 6371; // Radius der Erde in Kilometern
+        final int ERDRADIUS = 6371; // radius of the earth in kilometers
 
-        // Umrechnung von Grad in Radiant
+        // Convert degrees to radians
         double lat1Rad = Math.toRadians(lat1);
         double lon1Rad = Math.toRadians(lon1);
         double lat2Rad = Math.toRadians(lat2);
         double lon2Rad = Math.toRadians(lon2);
 
-        // Haversine-Formel
+        // Haversine-Formula
         double deltaLat = lat2Rad - lat1Rad;
         double deltaLon = lon2Rad - lon1Rad;
         double a = Math.sin(deltaLat / 2) * Math.sin(deltaLat / 2) +
@@ -36,7 +36,7 @@ public class RegionModule extends Module{
                         Math.sin(deltaLon / 2) * Math.sin(deltaLon / 2);
         double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 
-        // Entfernung in Kilometern
+        // Distance in kilometers
         return ERDRADIUS * c;
     }
 }

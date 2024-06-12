@@ -2,7 +2,7 @@ import org.json.JSONObject;
 
 public class YearModule extends Module{
 
-    // Überprüft ob das Jahr des Meteors in den Parametern liegt
+    // checks if the year of the meteor is in the parameters given
     public boolean meteorInParameters(JSONObject meteor, String... arguments){
         String meteorDateString = meteor.optString("year", null);
 
