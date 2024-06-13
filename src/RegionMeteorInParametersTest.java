@@ -3,6 +3,9 @@ import org.json.JSONObject;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Tests the meteorInParameters method of the RegionModule class.
+ */
 class RegionMeteorInParametersTest {
 
     RegionModule regionModule = new RegionModule();

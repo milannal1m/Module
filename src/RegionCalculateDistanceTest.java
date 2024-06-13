@@ -2,6 +2,9 @@ import org.junit.jupiter.api.Test;
 import java.lang.reflect.Method;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Tests the calculateDistance method of the RegionModule class.
+ */
 class RegionCalculateDistanceTest {
 
     double latMunich = 48.1372;

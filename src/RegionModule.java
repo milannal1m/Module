@@ -1,8 +1,20 @@
 import org.json.JSONObject;
 
+/**
+ * Module to filter meteorites based on their region.
+ */
 public class RegionModule extends Module{
 
-    // checks if the region of the meteor is in the parameters given
+    /**
+     * Implementation of abstract method to check if a meteorite location is in a
+     * given radius to another location.
+     * Checks if mass of meteorite is in the radius to a given location.
+     *
+     * @param meteor JSONObject of meteorite to check if the meteorite location is in the radius to the .
+     * @param arguments Indefinite Amount Arguments to filter the meteorites.
+     *                  Should be a latitude, a longitude and a radius.
+     * @return Boolean if the meteorite matches the filter.
+     */
     public boolean meteorInParameters(JSONObject meteor, String... arguments){
         // 1000 as default Value because no meteor has this coordinates
         double meteorLat = meteor.optDouble("reclat", 1000);
@@ -18,7 +30,15 @@ public class RegionModule extends Module{
         return false;
     }
 
-    // Calculates the distance between two points on the earth
+    /**
+     * Calculates the distance between two locations on earth.
+     *
+     * @param lat1 Latitude of the first location.
+     * @param lon1 Longitude of the first location.
+     * @param lat2 Latitude of the second location.
+     * @param lon2 Longitude of the second location.
+     * @return The Distance between the two locations in kilometers.
+     */
     private double calculateDistance(double lat1, double lon1, double lat2, double lon2) {
         final int ERDRADIUS = 6371; // radius of the earth in kilometers
 

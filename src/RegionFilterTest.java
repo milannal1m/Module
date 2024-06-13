@@ -4,6 +4,9 @@ import org.json.JSONObject;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Tests the filter method of the RegionModule class.
+ */
 class RegionFilterTest {
 
     RegionModule regionModule = new RegionModule();

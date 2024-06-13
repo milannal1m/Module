@@ -9,7 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78c7d731-89af-49ec-a5f7-8cd140c49a64" name="Changes" comment="" />
+    <list default="true" id="78c7d731-89af-49ec-a5f7-8cd140c49a64" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClassModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JSONHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JSONHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MassModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MassModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Module.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegionCalculateDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegionCalculateDistanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegionFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegionFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegionMeteorInParametersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegionMeteorInParametersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegionModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegionModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/YearModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/YearModule.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +70,7 @@
     "JUnit.RegionCalculateDistanceTest.test5North.executor": "Run",
     "JUnit.RegionCalculateDistanceTest.testDistanceMunichStuttgart.executor": "Run",
     "JUnit.RegionCalculateDistanceTest.testMaxDistance.executor": "Run",
+    "JUnit.RegionFilterTest.executor": "Run",
     "JUnit.RegionFilterTest.testAllInCriteria.executor": "Run",
     "JUnit.RegionFilterTest.testEmptyJSONArray.executor": "Run",
     "JUnit.RegionFilterTest.testMissingJSONData.executor": "Run",
@@ -80,7 +93,7 @@
     "create.test.in.the.same.root": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/milan/Documents/DHBW/SWE/SWEProjekt/Module/src",
+    "last_opened_file_path": "/Users/milan/Documents/DHBW/SWE/SWEProjekt/Module",
     "onboarding.tips.debug.path": "/Users/milan/Documents/DHBW/SWE/SWEProjekt/Module/src/Main.java",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
@@ -121,12 +134,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegionFilterTest.testAllInCriteria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegionFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RegionFilterTest" />
-      <option name="METHOD_NAME" value="testAllInCriteria" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,12 +163,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegionFilterTest.testSomeInCriteria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegionMeteorInParametersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegionFilterTest" />
-      <option name="METHOD_NAME" value="testSomeInCriteria" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="RegionMeteorInParametersTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,10 +175,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RegionCalculateDistanceTest" />
+        <item itemvalue="JUnit.RegionMeteorInParametersTest" />
+        <item itemvalue="JUnit.RegionFilterTest" />
         <item itemvalue="JUnit.RegionFilterTest.testEmptyJSONArray" />
         <item itemvalue="JUnit.RegionFilterTest.testMissingJSONData" />
-        <item itemvalue="JUnit.RegionFilterTest.testAllInCriteria" />
-        <item itemvalue="JUnit.RegionFilterTest.testSomeInCriteria" />
       </list>
     </recent_temporary>
   </component>

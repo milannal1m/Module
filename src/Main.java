@@ -22,10 +22,12 @@ public class Main {
             arguments[i-1] = args[i];
         }
 
+        //reads a JSON file and returns it as a JSONArray
         JSONArray meteorJSON = jsonHandler.JSONParseFile(sourcepath);
 
         int initialLength = meteorJSON.length(); // Anzahl vorher
 
+        //Calls the wanted filter Module
         //JSONArray filteredMeteorJSON = regionModule.filter(meteorJSON,arguments); //Region
         //JSONArray filteredMeteorJSON = massModule.filter(meteorJSON,arguments); //Masse
         //JSONArray filteredMeteorJSON = yearModule.filter(meteorJSON,arguments); //Jahr
@@ -33,8 +35,10 @@ public class Main {
 
         int finalLength = filteredMeteorJSON.length(); // Anzahl danach
 
+        //prints out the amount of meteors that were filtered for debug purposes
         System.out.println("Filtered " + (initialLength-finalLength) + " meteors.");
 
+        //writes the filtered meteors to a new JSON file
         jsonHandler.JSONWrite(filteredMeteorJSON, sourcepath);
     }
 }
